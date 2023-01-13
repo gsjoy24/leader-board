@@ -23,17 +23,29 @@
 	.courses {
 		grid-template-columns: repeat(1, 1fr);
 	}
+	.blog {
+		align-items: center;
+		margin-bottom: 30px;
+		padding-bottom: 10px;
+		border-bottom: 1px solid #000;
+	}
 	.blog .blog-thumbnail {
 		width: 90%;
 		margin: auto;
 	}
 	.blog .blog-thumbnail img {
+		display: block;
 		width: 100%;
+		max-width: 240px;
+		margin: auto;
 	}
 	.blog-info {
-		margin: 10px;
-		padding: 10px 20px;
+		margin: 0;
 	}
+	.blog-info .blog-title {
+		margin-top: 30px;
+	}
+
 	.course {
 		max-width: 260px;
 		margin: auto;
@@ -44,5 +56,18 @@
 	}
 }
 
-@media only screen and (min-width: 577px) and (max-width: 768px) {
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+	.blogs {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.blog .blog-thumbnail img {
+		width: 240px;
+	}
+	.blog-info {
+		margin: 34px 20px;
+	}
+	.courses,
+	.players {
+		grid-template-columns: repeat(2, 1fr);
+	}
 }
