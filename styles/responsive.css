@@ -1,0 +1,28 @@
+/* !------------------------------------
+   ! media queries for responsive layout 
+   !------------------------------------*/
+/* *for mobile devices */
+@media only screen and (max-width: 576px) {
+	.container {
+		max-width: 100%;
+		margin: 20px 0;
+		padding: 10px;
+	}
+	.players,
+	.blogs {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.player img {
+		width: 100px;
+		margin-bottom: 10px;
+	}
+	.player,
+	.blog {
+		flex-direction: column;
+	}
+
+	.blog-info {
+		margin: 10px;
+		font-size: 10px;
+	}
+}
