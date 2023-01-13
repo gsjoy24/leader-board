@@ -83,7 +83,7 @@ nav ul li a {
 .blog .blog-thumbnail img {
 	width: 175px;
 	box-shadow: 1px 3px 5px;
-	border-radius: 10px;
+	border-radius: 18px;
 }
 .blog-info {
 	margin: 0 20px;
@@ -123,7 +123,6 @@ nav ul li a {
 	color: #ed6b4f;
 	margin: 8px 0;
 }
-
 .course-info {
 	display: flex;
 	align-items: center;
@@ -150,6 +149,13 @@ nav ul li a {
 	border-radius: 25px;
 }
 
-.hide {
-	display: none;
+/* ! footer styles */
+footer {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	padding: 5px;
+	background-color: #562eff;
+	color: #fff;
+	font-size: 12px;
 }
