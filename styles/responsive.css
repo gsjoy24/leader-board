@@ -8,7 +8,9 @@
 		margin: 20px 0;
 		padding: 10px;
 	}
-	.players,
+	.players {
+		grid-template-columns: repeat(2, 1fr);
+	}
 	.blogs {
 		grid-template-columns: repeat(1, 1fr);
 	}
@@ -20,9 +22,28 @@
 	.blog {
 		flex-direction: column;
 	}
-
+	.blog .blog-thumbnail {
+		width: 90%;
+		margin: auto;
+	}
+	.blog .blog-thumbnail img {
+		width: 100%;
+	}
 	.blog-info {
 		margin: 10px;
-		font-size: 10px;
+	}
+
+	/* !gdfghjk */
+
+	.courses {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.course {
+		max-width: 260px;
+		margin: auto;
+		margin-bottom: 30px;
+	}
+	.course img {
+		width: 240px;
 	}
 }
